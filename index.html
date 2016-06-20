@@ -2,13 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SET THE TITLE!!!</title>
-	<!--Might be good to link bootstrap here-->
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<!--write html below this line-->
-	
-	
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+				<h1 class="game-title">Rock Paper Scissors</h1>
+				<h3 class="instructions">Click your choice!</h3>
+				<div class="row">
+					<div class="col-xs-4">
+						<button type="button" class="btn" id="rockButton" onclick="play('rock')">Rock</button>
+					</div>
+					<div class="col-xs-4">
+						<button type="button" class="btn" id="paperButton" onclick="play('paper')">Paper</button>
+					</div>
+					<div class="col-xs-4">
+						<button type="button" class="btn" id ="scissorsButton" onclick="play('scissors')">Scissors</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+				<h4 id="result" class="game-outcome"></h4>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+						<p class="text-center"><i id="reaction-icon" class="reaction"></i></p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+						<button type="button" class="btn btn-hidden" id="resetButton" onclick="reset()">Play again?</button>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--write html above this line-->
 	<!--the following line is used to link your javascript file.-->
 	<script src="app.js"></script>

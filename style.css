@@ -1,0 +1,40 @@
+.btn {
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+}
+
+button.btn-hidden {
+    display: none;
+}
+
+.btn-highlight {
+    background-color: #225457;
+    color: #eee;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+}
+
+.game-title, .instructions, .game-outcome {
+    font-family: GillSans, HelveticaNeue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.game-title {
+    margin-top: 50px;
+}
+
+.instructions {
+    margin-bottom: 40px;
+}
+
+.game-outcome {
+    margin: 40px auto 10px auto;
+}
+
+.reaction {
+    margin-bottom: 40px;
+}
