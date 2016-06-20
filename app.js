@@ -42,7 +42,7 @@ function play(playerChoice) {
             document.getElementById('reaction-icon').className += ' fa fa-meh-o fa-4x';
         }
     }
-    document.getElementById('resetButton').style.display = 'block';
+    document.getElementById('resetButton').style.display = 'block'; 
 }
 
 
