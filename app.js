@@ -1,4 +1,7 @@
 function play(playerChoice) {
+
+    reset();
+
     var options = ['rock', 'paper', 'scissors'];
     var index = Math.floor(Math.random() * options.length);
     var computerChoice = options[index];
@@ -47,10 +50,12 @@ function play(playerChoice) {
 
 
 function reset() {
+    document.getElementById('rockButton').className = 'btn';
+    document.getElementById('paperButton').className = 'btn';
+    document.getElementById('scissorsButton').className = 'btn';
     document.getElementById('result').innerHTML = '';
     document.getElementById('resetButton').style.display = 'none';
-    document.getElementsByClassName('btn-highlight')[0].className = 'btn';
-    document.getElementsByClassName('fa')[0].className = 'reaction';
+    document.getElementById('reaction-icon').className = 'reaction';
 }
 
 
